@@ -175,6 +175,16 @@ input, select, textarea {
     margin-bottom: 2em;
   }
 
+<!-- back to top -->
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
+
 /* Container */
 
   .container {
