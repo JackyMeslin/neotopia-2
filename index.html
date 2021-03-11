@@ -7,6 +7,33 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/font-mfizz.css">
+  <style>
+  #scrollUp
+  {
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.5;
+  }
+  </style>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+  <script>
+              jQuery(function(){
+                  $(function () {
+                      $(window).scroll(function () {
+                          if ($(this).scrollTop() > 200 ) {
+                              $('#scrollUp').css('right','10px');
+                          } else {
+                              $('#scrollUp').removeAttr( 'style' );
+                          }
+
+                      });
+                  });
+              });
+  </script>
 
 
 <style>
@@ -52,7 +79,7 @@ opacity: 0.5;
 
           <!-- Logo -->
             <h1><a href="index.html">
-            <img src="logo-ss-fond.png" alt="logo-neotopia" width="300px">
+            <img src="../assets/css/images/logo-ss-fond.png" alt="logo-neotopia" width="360px">
             </a></h1>
 
           <!-- Nav -->
@@ -192,11 +219,111 @@ opacity: 0.5;
                         </section>
                       </div> -->
 
-                    </div>
+                    <!-- </div> -->
                   </section>
 
               </div>
               <div class="col-12">
+
+
+          <!-- Our technologies -->
+            <section id="three" class="container">
+               <header class="major">
+                      <h2>Nos technologies</h2>
+                    </header>
+              <div class="row">
+                <div class="col-4 col-12-medium">
+                  <section class="first">
+                    <i class="fab fa-html5 fa-5x"></i>
+                    <header>
+                      <h2>HTML 5</h2>
+                    </header >
+                    <p>Structurez et naviguez au sein de vos pages web</p>
+                  </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                  <section class="middle">
+                    <i class="fab fa-js fa-5x"></i>
+                    <header>
+                      <h2>Javascript</h2>
+                    </header>
+                    <p>Améliorez l'interactivité et le dynamisme de vos pages</p>
+                  </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                  <section class="last">
+                    <i class="fab alt fa-css3-alt fa-5x"></i><br/>
+                    <header>
+                      <h2>CSS</h2>
+                    </header>
+                    <p>Ajoutez du style à votre environnement numérique</p>
+                  </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                  <section class="first">
+                    <i class="fab alt2 fa-git fa-5x"></i><br/>
+                    <header>
+                      <h2>GitHub</h2>
+                    </header>
+                    <p>Travail collaboratif de l'équipe tech et gestion des versions des produits</p>
+                  </section>
+                </div>
+                 <div class="col-4 col-12-medium">
+                  <section class="middle">
+                    <i class=" icon-ruby-on-rails" style="font-size:6em"></i><br/>
+                    <header>
+                      <h2>Rails</h2>
+                    </header>
+                    <p>Framework qui permet de développer rapidement et intuitivement des applications</p>
+                  </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                  <section class="last">
+                    <i class=" icon-postgres" style="font-size:6em"></i><br/>
+                    <header>
+                      <h2>Postgresql</h2>
+                    </header>
+                    <p>Gestion de base de données relationnelle et objet</p>
+                  </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                  <section class="first">
+                    <i class="icon-ruby" style="font-size:6em"></i><br/>
+                    <header>
+                      <h2>Ruby</h2>
+                    </header>
+                    <p>Langage open-source dynamique qui met l'accent sur la simplicité et la productivité</p>
+                  </section>
+                </div>
+                 <div class="col-4 col-12-medium">
+                  <section class="middle">
+                    <img src="../assets/css/images/mapbox.png" alt="" width="90px" style="color: #5d5d5d">
+                    <header>
+                      <h2>Mapbox</h2>
+                    </header>
+                    <p>Cartographie dynamique (IGN, satellite, 3D...)</p>
+                  </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                  <section class="last">
+                    <img src="../assets/css/images/cloudinary.png" alt="" width="70px" style="color: #5d5d5d">
+                    <header>
+                      <h2>Cloudinary</h2>
+                    </header>
+                    <p>services de gestion d'images et de vidéos dans le cloud</p>
+                  </section>
+                </div>
+
+
+              </div>
+              <footer>
+                <ul class="actions">
+                  <li><a href="coming-soon.html" class="button large">Commencer l'aventure</a></li>
+                  <li><a href="#four" class="button alt large">Contactez-nous !</a></li>
+                </ul>
+              </footer>
+
+            </section>
 
                 <!-- Blog -->
 <!--                   <section>
@@ -432,11 +559,17 @@ opacity: 0.5;
           </div>
         </section>
 
+<<<<<<< HEAD
 
   <!-- back to top -->
   <div id="scrollUp">
   <a href="#top"><img src="to_top.png"/></a>
   </div>
+=======
+<div id="scrollUp">
+<a href="#top"><img src="to_top.png"/></a>
+</div>
+>>>>>>> 9e012ee43574a61aa0567caf7e73e2e303ad2cc1
 
   <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
@@ -446,7 +579,10 @@ opacity: 0.5;
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <!-- <script src="assets/js/to-top.js"></script> -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e012ee43574a61aa0567caf7e73e2e303ad2cc1
 </body>
 
 </html>
