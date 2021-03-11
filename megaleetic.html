@@ -1,33 +1,73 @@
-<!DOCTYPE HTML>
-<!--
-  Dopetrope by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <title>Néotopia</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone.png" />
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/font-mfizz.css">
+  <style>
+  #scrollUp
+  {
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.5;
+  }
+  </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+  <script>
+              jQuery(function(){
+                  $(function () {
+                      $(window).scroll(function () {
+                          if ($(this).scrollTop() > 200 ) {
+                              $('#scrollUp').css('right','10px');
+                          } else {
+                              $('#scrollUp').removeAttr( 'style' );
+                          }
+
+                      });
+                  });
+              });
+  </script>
+
 </head>
-  <body class="no-sidebar is-preload">
-    <div id="page-wrapper">
+
+
+<body class="homepage is-preload">
+
+ <!-- parallax ? -->
+ <!--          <div class="bgimg-1">
+            <div class="caption">
+            <span class="border">SCROLL DOWN</span>
+            </div>
+          </div> -->
+
+  <div id="page-wrapper">
 
     <!-- Header -->
         <section id="header">
 
           <!-- Logo -->
             <h1><a href="index.html">
-            <img src="logo-ss-fond.png" alt="logo-neotopia" width="300px">
+            <img src="../assets/css/images/logo-ss-fond.png" alt="logo-neotopia" width="360px">
             </a></h1>
+            <div class="activity">
+              <h2 >Ingénierie Culturelle <br> Contenu Multimedia <br> Applications web </h2>
+            </div>
 
-      <!-- Nav -->
+          <!-- Nav -->
             <nav id="nav">
               <ul>
                 <li class="current"><a href="index.html">Accueil</a></li>
                 <li class="current"><a href="#banner">Propositions</a></li>
                 <li class="current"><a href="#two">Productions</a></li>
+                <li class="current"><a href="#three">Technologies</a></li>
 
                 <!--   <a href="#">Dropdown</a>
                   <ul>
@@ -54,35 +94,36 @@
                 <li class="current"><a href="#four">Contact</a></li>
             </nav>
 
-
       <!-- Main -->
         <section id="main">
           <div class="container">
 
             <!-- Content -->
               <article class="box post">
-                <a href="#" class="image featured"><img src="images/megaleetic-presentation-1.png" alt="" /></a>
+                <a href="#" class="image centered"><img src="images/megaleetic-presentation-1.png" alt="" /></a>
                 <header>
                   <h2>Megaleetic</h2>
-                  <p>Nous vous faisons voyager au travers du temps</p>
+                  <p>Nous vous faisons voyager à travers le temps</p>
                 </header>
                 <p>
                   Megaleetic est une application qui propose des itinéraires de découverte des mégalithes de Bretagne.
                 </p>
-                <div class="image featured">
+                <div class="image centered">
                 <img src="images/megaleetic-presentation-2.png" alt="" />
                 </div>
                 <p>
                   Vous êtes guidé, pas à pas, tout au long des différents sites archéologiques. A chaque étape, vous recevez des informations simples et concises sur le lieu visité. Pour accéder à la suite, vous devez répondre à une question qui débloque le chemin.
                 </p>
                 <section>
-                  <header class="image featured">
+                  <header class="image centered">
                     <img src="images/megaleetic-presentation-3.png" alt="" />
                     <h3>Un espace personnel</h3>
                   </header>
                   <p>
                     Sélectionnez vos parcours. Reprenez là où vous vous étiez arrêté la dernière fois. Retrouvez les réponses aux questions afin de comprendre peu à peu les secrets des mégalithes !
                   </p>
+
+                  <video controls src="megaleetic.mp4">Ici la description alternative</video>
 
               </article>
 
@@ -91,111 +132,6 @@
 
 
 
-      <!-- Footer -->
-        <section id="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-8 col-12-medium">
-                <section>
-                  <header>
-                    <h2>Notre actualité</h2>
-                  </header>
-                  <ul class="dates">
-                    <li>
-                      <span class="date">Avril <strong>16</strong></span>
-                      <h3><a href="#"></a>Inauguration Néotopia</h3>
-                      <p>Soirée de présentation de l'entreprise.</p>
-                    </li>
-                    <li>
-                      <span class="date">Avril <strong>17</strong></span>
-                      <h3><a href="#"></a>Design collaboratif</h3>
-                      <p>Enquête sur les usages des visiteurs d'un site mégalithique.</p>
-                    </li>
-
-                </section>
-              </div>
-              <div class="col-4 col-12-medium">
-                <section>
-                  <header>
-                    <h2>Quelles sont nos valeurs ?</h2>
-                  </header>
-                  <a href="#" class="image featured"><img src="images/Valeurs-definition.jpg" alt="" /></a>
-                  <p>
-                    <strong>Néotopia</strong> est une entreprise dont la mission est de faciliter la <strong>compréhension de l'histoire passée</strong> du territoire breton et d'accompagner les visiteurs et les professionnels du tourisme vers les <strong>nouvelles pratiques numériques</strong>.
-                  </p>
-                  <footer>
-                    <ul class="actions">
-                      <li><a href="./resume.pdf" target="_blank" class="button">En savoir plus sur le fondateur</a></li>
-                    </ul>
-                  </footer>
-                </section>
-              </div>
-        <!--       <div class="col-4 col-6-medium col-12-small">
-                <section>
-                  <header>
-                    <h2>On parle de nous</h2>
-                  </header>
-                  <ul class="divided">
-                    <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-                    <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col-4 col-6-medium col-12-small">
-                <section>
-                  <header>
-                    <h2>Ça nous inspire</h2>
-                  </header>
-                  <ul class="divided">
-                    <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-                    <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-                  </ul>
-                </section>
-              </div> -->
-              <div id="four" class="col-4 col-12-medium">
-                <section>
-                  <header>
-                    <h2>Suivez nous sur les réseaux sociaux (prochainement)</h2>
-                  </header>
-                 <!--  <ul class="social">
-                    <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-                    <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-                    <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-                    <li><a class="icon brands fa-youtube" href="#"><span class="label">Youtube</span></a></li>
-                    <li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-                  </ul>
-                  <ul class="contact">
-                    <li> -->
-                      <h3>Adresse</h3>
-                      <p>
-                        Néotopia<br />
-                        62 Rue de Codilo<br />
-                        35600 REDON
-                      </p>
-                    </li>
-                    <li>
-                      <h3>Mail</h3>
-                      <p><a href="mailto:contact@neotopia.bzh">contact@neotopia.bzh</a></p>
-                    </li>
-                    <li>
-                      <h3>Téléphone</h3>
-                      <p>07 68 10 02 07</p>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col-12">
-
-                <!-- Copyright -->
-                  <div id="copyright">
-                    <ul class="links">
-                      <li>&copy; Néotopia 2021. Tous droits réservés.</li>
-                  </div>
-
-              </div>
-            </div>
-          </div>
-        </section>
 
   <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>

@@ -180,6 +180,43 @@ input, select, textarea {
     margin-bottom: 2em;
   }
 
+/*parallax*/
+
+.bgimg-1 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/c.jpg");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
 /* Container */
 
   .container {
@@ -1571,6 +1608,7 @@ input, select, textarea {
     margin: 2.25em 0 0 0;
   }
 
+
 /* Box */
 
   .box {
@@ -2188,8 +2226,9 @@ input, select, textarea {
     /*background-image: url("c.jpg");*/
     background: #CCE8F4 url("../../images/c.jpg");
     background-position: center center;
-    background-size: 300px 150 px;
-    /*background-size: auto 100%;*/
+    background-position-y: -350px;
+    /*background-size: 300px 150 px;*/
+    background-size:  100%;
     background-repeat: no-repeat;
     text-align: center;
     position: relative;
