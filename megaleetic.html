@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr"><head>
   <title>Néotopia</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="icone.png" />
+  <link rel="shortcut icon" href="icone.png">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -19,7 +18,7 @@
   }
   </style>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+ <!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
   <script>
               jQuery(function(){
@@ -34,12 +33,12 @@
                       });
                   });
               });
-  </script>
+  </script> -->
 
 </head>
 
 
-<body class="homepage is-preload">
+<body class="homepage" cz-shortcut-listen="true">
 
  <!-- parallax ? -->
  <!--          <div class="bgimg-1">
@@ -58,16 +57,16 @@
             <img src="../assets/css/images/logo-ss-fond.png" alt="logo-neotopia" width="360px">
             </a></h1>
             <div class="activity">
-              <h2 >Ingénierie Culturelle <br> Contenu Multimedia <br> Applications web </h2>
+              <h2>Ingénierie Culturelle <br> Contenu Multimedia <br> Applications web </h2>
             </div>
 
           <!-- Nav -->
             <nav id="nav">
               <ul>
-                <li class="current"><a href="index.html">Accueil</a></li>
-                <li class="current"><a href="#banner">Propositions</a></li>
-                <li class="current"><a href="#two">Productions</a></li>
-                <li class="current"><a href="#three">Technologies</a></li>
+                <li class="current" style="white-space: nowrap;"><a href="index.html">Accueil</a></li>
+                <li class="current" style="white-space: nowrap;"><a href="index.html#banner">Propositions</a></li>
+                <li class="current" style="white-space: nowrap;"><a href="index.html#two">Productions</a></li>
+                <li class="current" style="white-space: nowrap;"><a href="index.html#three">Technologies</a></li>
 
                 <!--   <a href="#">Dropdown</a>
                   <ul>
@@ -91,16 +90,16 @@
                 <li><a href="right-sidebar.html">Right Sidebar</a></li>
                 <li><a href="no-sidebar.html">No Sidebar</a></li>
               </ul> -->
-                <li class="current"><a href="#four">Contact</a></li>
-            </nav>
+                <li class="current" style="white-space: nowrap;"><a href="#four">Contact</a></li>
+            </ul></nav>
 
       <!-- Main -->
         <section id="main">
           <div class="container">
 
             <!-- Content -->
-              <article class="box post">
-                <a href="#" class="image centered"><img src="images/megaleetic-presentation-1.png" alt="" /></a>
+              <article class="box post" >
+                <a href="#" ><img src="images/megaleetic-presentation-1.png" alt="" width="100%" height="auto"></a>
                 <header>
                   <h2>Megaleetic</h2>
                   <p>Nous vous faisons voyager à travers le temps</p>
@@ -108,26 +107,33 @@
                 <p>
                   Megaleetic est une application qui propose des itinéraires de découverte des mégalithes de Bretagne.
                 </p>
-                <div class="image centered">
-                <img src="images/megaleetic-presentation-2.png" alt="" />
+                <div>
+                <img src="images/megaleetic-presentation-2.png" alt="" width="100%" height="auto">
                 </div>
                 <p>
                   Vous êtes guidé, pas à pas, tout au long des différents sites archéologiques. A chaque étape, vous recevez des informations simples et concises sur le lieu visité. Pour accéder à la suite, vous devez répondre à une question qui débloque le chemin.
                 </p>
                 <section>
-                  <header class="image centered">
-                    <img src="images/megaleetic-presentation-3.png" alt="" />
+                  <header>
+                    <img src="images/megaleetic-presentation-3.png" alt="" width="100%" height="auto">
                     <h3>Un espace personnel</h3>
                   </header>
                   <p>
                     Sélectionnez vos parcours. Reprenez là où vous vous étiez arrêté la dernière fois. Retrouvez les réponses aux questions afin de comprendre peu à peu les secrets des mégalithes !
                   </p>
 
-                  <video controls src="megaleetic.mp4">Ici la description alternative</video>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/n1XEWqejv5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <!-- <video controls="" src="megaleetic.mp4">Ici la description alternative</video> -->
 
-              </article>
+              </section>
+            </article>
 
           </div>
+
+          <div id="scrollUp">
+          <a href="#top"><img src="to_top.png"/></a>
+          </div>
+
         </section>
 
 
@@ -140,7 +146,5 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/to-top.min.js"></script>
 
-</body>
-
-</html>
