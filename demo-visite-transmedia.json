@@ -1,0 +1,311 @@
+PanoramaStudioViewerParams = {
+"panoramaStudioViewer": {
+"key": "777040773250",
+"audio": {
+        "autoplay": false,
+        "id": "gAudio",
+        "loop": true,
+        "src": "CloneMeTwice_TheDarkWoods.mp3"
+    },
+"control": {
+        "enablevrcontroller": true,
+        "mousemode": "drag",
+        "touchmode": "drag",
+        "vrdisplay": "auto"
+    },
+"data": {
+        "id": "globalData",
+        "infoTextBox": {
+            "align": "center",
+            "captureMouse": true,
+            "checkHover": true,
+            "id": "infobox",
+            "maxwidth": "66%",
+            "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+            "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+            "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><h1 style='line-height: 2em;'>Ceci est une démonstration de contenu transmedia.</h1>\n<p>Elle est destinée aux acteurs de la valorisation du patrimoine et n'a pas vocation a être diffusée au grand public.</p>\n<h3>Demandez une démonstration !</h3>\n<div style=\"display: flex;\n            justify-content: space-around;\">\n<div><a href=\"mailto:contact@neotopia.bzh\"> Envoyer un email </a></div>\n<div><a href=\"tel:+33768100207\"> Appeler Néotopia</a></div>\n</div\n<div style=\"display: flex;\n            justify-content: space-around;\">\n<video style=\"padding-top:20px\" width=\"320\" height=\"240\" controls>\n     <source src=\"\\DEMO-visite360\\interview\\Bienvenu.mp4\" type=video/mp4>\n    </video>\n<div></div>",
+            "xoff": 0,
+            "yoff": -30
+        },
+        "messageBoxStyle": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66);"
+    },
+"include": [
+        {
+            "src": "demo-visite-transmedia_controls.json"
+        },
+        {
+            "src": "panoStudioViewerGallery.json"
+        }
+    ],
+"logo": {
+        "href": "https://neotopia.bzh/",
+        "src": "logo-ss-fond-sm.png",
+        "style": "max-width: 80%;",
+        "target": "_blank"
+    },
+"node": {
+	"autoplay": {
+	        "pan": 2,
+	        "restart": 30,
+	        "status": "on",
+	        "tilt": 0,
+	        "zoom": 1
+	    },
+	"camera": {
+	        "maxpan": 360,
+	        "maxtilt": 90,
+	        "minpan": 0,
+	        "mintilt": -90
+	    },
+	"hotspot": [
+	        {
+	            "bitmap": "icon-3d.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo0",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><div style=\"height:400px\">\n        <h3>Menhirs en 3D</h3>\n        <p>Explorer les menhirs en 3D !</p>\n        <div class=\"sketchfab-embed-wrapper\"> \n            <iframe style=\"width: 100%;\n    height: 300px;\" title=\"Menhirs - Alignement du Moulin B - Saint-Just\" frameborder=\"5\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=\"https://sketchfab.com/models/d157695b157f40e49a0b554f660c0872/embed\"> </iframe> \n            <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\"> <a href=\"https://sketchfab.com/3d-models/menhirs-alignement-du-moulin-b-saint-just-d157695b157f40e49a0b554f660c0872?utm_medium=embed&utm_campaign=share-popup&utm_content=d157695b157f40e49a0b554f660c0872\" target=\"_blank\" style=\"font-weight: bold; color: #1CAAD9;\"> Menhirs - Alignement du Moulin B - Saint-Just </a> \n            par <a href=\"https://neotopia.bzh/\" target=\"_blank\" style=\"font-weight: bold; color: #1CAAD9;\"> Néotopia </a></p>\n        </div>\n            \n        </div></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;0.50",
+	            "position": "337.0605,26.0156",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Menhirs en 3D"
+	            },
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "icon-info.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo1",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 120%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><iframe style=\"padding:10px\" width=\"250\" height=\"208\" src=\"https://www.youtube.com/embed/iVDAVsqf2K0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "321.9434,51.3281",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Présentation des alignements"
+	            },
+	            "unit": "deg"
+	        },
+		{
+	            "bitmap": "icon-picture.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo2",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:center; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px; text-align= center;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><img src=\"Lever de lune.jpg\" alt=\"lever de lune\" width=\"260\">\n<p>Lever de lune- Cliché Néotopia &copy;2022</p></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "127.8369,-7.8223",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Lever de lune"
+	            },
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "icon-map-video.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+                    "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo3",
+	                "maxwidth": "88%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><video controls width=\"250\">\n    <source src=\"plan aérien.mp4\" type=\"video/mp4\" width=\"370px\">\nDésolé votre navigateur ne peut lire le fichier média</video>\n<p>Plan du site (vidéo aérienne)</p></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "143.4375,54.2285",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Plan du site (vidéo aérienne)"
+	            },
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "drone-icon.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo4",
+	                "maxwidth": "88%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style></style><video controls width=\"250\">\n <source src=\"Saint-Just-Alignements-du-Moulin.mp4\" type=\"video/mp4\" alt=\"vue aérienne des alignements\" width=\"370px\">\n</video><p>vue aérienne des alignements</p></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "261.2988,-11.1621",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Vidéo aérienne"
+	            },
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "drone-icon-360.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo5",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><iframe width=\"250\" height=\"208\" src=\"https://www.youtube.com/embed/vyBTPE12kfs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "50.3613,-15.3809",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Vidéo aérienne 360°"
+	            },
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "pap_circle_up.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "panorama-2.html",
+	            "opacity": "1.00;1.00",
+	            "position": "16.6113,21.5332",
+	            "target": "_self",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Suite de la visite"
+	            },
+	            "transition": "",
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "podcast-icon.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo7",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px; line-height: 2em;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><h2>PAROLES D'HISTOIRE : Le néolithique, avec Jean-Paul Demoule</h2>\n<iframe src=\"https://player.blubrry.com/?media_url=http%3A%2F%2Fmedia.blubrry.com%2Fparolesdhistoire%2Fp%2Fcontent.blubrry.com%2Fparolesdhistoire%2Fdemoule_neolithique.mp3&amp;podcast_link=http%3A%2F%2Fparolesdhistoire.fr%2Findex.php%2F2018%2F10%2F10%2F23-le-neolithique-avec-jean-paul-demoule%2F#darkOrLight-dark&amp;shownotes-ffffff&amp;shownotesBackground-ffc100&amp;download-ffffff&amp;downloadBackground-E6AE00&amp;subscribe-ffffff&amp;subscribeBackground-ffc100&amp;share-ffffff&amp;shareBackground-E6AE00\" scrolling=\"no\" id=\"blubrryplayer-1\" class=\"blubrryplayer\" width=\"100%\" height=\"138px\" frameborder=\"0\"></iframe></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "230.4492,62.6660",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Podcast sur le Néolithique"
+	            },
+	            "unit": "deg"
+	        },
+		{
+	            "bitmap": "icon-museum.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "https://www.megalithesetlandes.com/",
+	            "opacity": "1.00;1.00",
+	            "position": "173.8037,-1.6699",
+	            "target": "_blank",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Découvrez la maison Mégalithes et Landes de Saint-Just !"
+	            },
+	            "transition": "",
+	            "unit": "deg"
+	        }
+	    ],
+	"hotspots": {
+	        "visible": true
+	    },
+	"id": "demo-visite-transmedia",
+	"image":{"baseindex":1,"bitmap":[{"back":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_1b_%y_%x.jpg"},"down":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_1d_%y_%x.jpg"},"front":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_1f_%y_%x.jpg"},"height":2607,"left":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_1l_%y_%x.jpg"},"right":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_1r_%y_%x.jpg"},"tilesize":480,"up":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_1u_%y_%x.jpg"},"width":2607},{"back":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_2b_%y_%x.jpg"},"down":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_2d_%y_%x.jpg"},"front":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_2f_%y_%x.jpg"},"height":1304,"left":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_2l_%y_%x.jpg"},"right":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_2r_%y_%x.jpg"},"tilesize":480,"up":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_2u_%y_%x.jpg"},"width":1304},{"back":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_3b_%y_%x.jpg"},"down":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_3d_%y_%x.jpg"},"front":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_3f_%y_%x.jpg"},"height":652,"left":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_3l_%y_%x.jpg"},"right":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_3r_%y_%x.jpg"},"tilesize":480,"up":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_3u_%y_%x.jpg"},"width":652},{"back":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_4b_%y_%x.jpg"},"down":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_4d_%y_%x.jpg"},"front":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_4f_%y_%x.jpg"},"height":326,"left":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_4l_%y_%x.jpg"},"right":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_4r_%y_%x.jpg"},"tilesize":480,"up":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_t_4u_%y_%x.jpg"},"width":326}],"multilevel":true,"preview":{"src":"demo-visite-transmedia_tiles/demo-visite-transmedia_preview.jpg"},"projection":"cubic"},
+	"location": {
+	        "alt": 81,
+	        "heading": 90,
+	        "lat": 47.76485567,
+	        "lon": -1.973841138888889
+	    },
+	"textbox": [
+	        {
+	            "align": "top",
+	            "style": " color:#ffffff; font-family: Arial,Helvetica,sans-serif; text-shadow: 0px 0px 3.8px #000000, 0px 0px 2.5px #000000, 0px 0px 1.7px #000000; font-size: 12px; font-weight: bold; text-align:center;",
+	            "text": "Alignements du Moulin - Saint-Just - Ille-et-Vilaine",
+	            "yoff": "4px"
+	        }
+	    ],
+	"view": {
+	        "hfov": 105,
+	        "pan": 180,
+	        "shortdescription": "Alignements du Moulin",
+	        "tilt": 25
+	    }
+},
+"version": "4.1"
+}
+}

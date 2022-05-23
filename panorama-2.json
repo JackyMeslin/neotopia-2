@@ -1,0 +1,122 @@
+PanoramaStudioViewerParams = {
+"panoramaStudioViewer": {
+"key": "777040773250",
+"audio": {
+        "autoplay": false,
+        "id": "gAudio",
+        "loop": true,
+        "src": "CloneMeTwice_TheDarkWoods.mp3"
+    },
+"control": {
+        "enablevrcontroller": true,
+        "mousemode": "drag",
+        "touchmode": "drag",
+        "vrdisplay": "auto"
+    },
+"data": {
+        "id": "globalData",
+        "messageBoxStyle": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66);"
+    },
+"include": [
+        {
+            "src": "panorama-2_controls.json"
+        },
+        {
+            "src": "panoStudioViewerGallery.json"
+        }
+    ],
+"logo": {
+        "href": "",
+        "src": "logo-ss-fond-sm.png",
+        "style": "max-width: 80%;",
+        "target": "_blank"
+    },
+"node": {
+	"autoplay": {
+	        "pan": 2,
+	        "restart": 5,
+	        "status": "off",
+	        "tilt": 0,
+	        "zoom": 1
+	    },
+	"camera": {
+	        "maxpan": 360,
+	        "maxtilt": 90,
+	        "minpan": 0,
+	        "mintilt": -90
+	    },
+	"hotspot": [
+	        {
+	            "bitmap": "pap_circle.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "demo-visite-transmedia.html",
+	            "opacity": "1.00;1.00",
+	            "position": "137.9883,11.5137",
+	            "target": "_self",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Début de la visite"
+	            },
+	            "transition": "",
+	            "unit": "deg"
+	        },
+	        {
+	            "bitmap": "icon-info.png",
+	            "bitmapscale": "1.0;1.1",
+	            "bitmaptype": "floating",
+	            "href": "javascript:",
+	            "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo1",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><h3>Information</h3>\n<img src=\"panneau.jpg\" alt=\"information\" width=\"260\"></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
+	            "opacity": "1.00;1.00",
+	            "position": "335.0830,52.1631",
+	            "textbox": {
+	                "align": "top",
+	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
+	                "text": "Information"
+	            },
+	            "unit": "deg"
+	        }
+	    ],
+	"hotspots": {
+	        "visible": true
+	    },
+	"id": "panorama-2",
+	"image":{"baseindex":1,"bitmap":[{"back":{"src":"panorama-2_tiles/panorama-2_t_1b_%y_%x.jpg"},"down":{"src":"panorama-2_tiles/panorama-2_t_1d_%y_%x.jpg"},"front":{"src":"panorama-2_tiles/panorama-2_t_1f_%y_%x.jpg"},"height":2607,"left":{"src":"panorama-2_tiles/panorama-2_t_1l_%y_%x.jpg"},"right":{"src":"panorama-2_tiles/panorama-2_t_1r_%y_%x.jpg"},"tilesize":480,"up":{"src":"panorama-2_tiles/panorama-2_t_1u_%y_%x.jpg"},"width":2607},{"back":{"src":"panorama-2_tiles/panorama-2_t_2b_%y_%x.jpg"},"down":{"src":"panorama-2_tiles/panorama-2_t_2d_%y_%x.jpg"},"front":{"src":"panorama-2_tiles/panorama-2_t_2f_%y_%x.jpg"},"height":1304,"left":{"src":"panorama-2_tiles/panorama-2_t_2l_%y_%x.jpg"},"right":{"src":"panorama-2_tiles/panorama-2_t_2r_%y_%x.jpg"},"tilesize":480,"up":{"src":"panorama-2_tiles/panorama-2_t_2u_%y_%x.jpg"},"width":1304},{"back":{"src":"panorama-2_tiles/panorama-2_t_3b_%y_%x.jpg"},"down":{"src":"panorama-2_tiles/panorama-2_t_3d_%y_%x.jpg"},"front":{"src":"panorama-2_tiles/panorama-2_t_3f_%y_%x.jpg"},"height":652,"left":{"src":"panorama-2_tiles/panorama-2_t_3l_%y_%x.jpg"},"right":{"src":"panorama-2_tiles/panorama-2_t_3r_%y_%x.jpg"},"tilesize":480,"up":{"src":"panorama-2_tiles/panorama-2_t_3u_%y_%x.jpg"},"width":652},{"back":{"src":"panorama-2_tiles/panorama-2_t_4b_%y_%x.jpg"},"down":{"src":"panorama-2_tiles/panorama-2_t_4d_%y_%x.jpg"},"front":{"src":"panorama-2_tiles/panorama-2_t_4f_%y_%x.jpg"},"height":326,"left":{"src":"panorama-2_tiles/panorama-2_t_4l_%y_%x.jpg"},"right":{"src":"panorama-2_tiles/panorama-2_t_4r_%y_%x.jpg"},"tilesize":480,"up":{"src":"panorama-2_tiles/panorama-2_t_4u_%y_%x.jpg"},"width":326}],"multilevel":true,"preview":{"src":"panorama-2_tiles/panorama-2_preview.jpg"},"projection":"cubic"},
+	"location": {
+	        "alt": 81,
+                "heading": 35,
+                "lat": 47.76463815827112,
+                "lon": -1.9756981164078646
+
+	    },
+	"textbox": [
+	        {
+	            "align": "top",
+	            "style": " color:#ffffff; font-family: Arial,Helvetica,sans-serif; text-shadow: 0px 0px 3.8px #000000, 0px 0px 2.5px #000000, 0px 0px 1.7px #000000; font-size: 12px; font-weight: bold; text-align:center;",
+	            "text": "Les petites roches piquées",
+	            "yoff": "4px"
+	        }
+	    ],
+	"view": {
+	        "hfov": 90,
+	        "pan": 180,
+	        "shortdescription": "Suite de la visite",
+	        "tilt": 20
+	    }
+},
+"version": "4.1"
+}
+}

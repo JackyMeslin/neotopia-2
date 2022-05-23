@@ -1615,7 +1615,7 @@ input, select, textarea {
     background: #ffffff;
     border-bottom: solid 1px #ccc;
     padding: 2.75em 1.75em 2.75em 1.75em;
-  }
+    }
 
     .box .image.featured {
       position: relative;
@@ -1741,6 +1741,7 @@ input, select, textarea {
       /*display: block;*/
       text-align:center;
       height: 350px;
+      padding-top: 10px;
       /*width: 100%;*/
     }
 
